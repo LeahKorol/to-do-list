@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    height: 100vh;
+    width: 80%;
+    border: 1px solid #ccc;
+    background-color: #f8eff5;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;  
+}
+
+form {
+    display: flex;
+    width: 100%;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#task {
+    flex-grow: 1; /* strech through all the space */
+    padding: 8px;
+    border: 3px solid #141013;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#submit {
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+.list-item {
+    display: grid;
+    /* auto -fit exactly checkbox, 1fr - span can strech, auto - fit exactly button */
+    grid-template-columns: auto 1fr auto;
+    /* align items vertically in each cell*/
+    align-items: center;
+    margin: 20px 10px;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+li.done .task-text {
+    text-decoration: line-through;
+}
+
+li {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
